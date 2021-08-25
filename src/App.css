@@ -1,0 +1,65 @@
+.wrapper {
+    text-align: center;
+    background-color: #282c34;
+}
+
+.header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #f0f0f0;
+}
+
+.title {
+    margin-bottom: 0.9em;
+}
+
+.title h1 {
+    margin-block-end: 0px;
+}
+
+.title span {
+    font-size: 0.8em;
+    color: #c9c9c9;
+}
+
+.link {
+    color: #61dafb;
+    text-decoration: none;
+}
+
+.link:hover {
+    filter: brightness(115%);
+}
+
+/* Animation */
+.fade {
+    opacity: 0;
+    animation: fade-in-animation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fade-first {
+    animation-delay: 0s;
+}
+
+.fade-second {
+    animation-delay: 1s;
+}
+
+.fade-third {
+    animation-delay: 2.5s;
+}
+
+@keyframes fade-in-animation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
